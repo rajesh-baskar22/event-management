@@ -21,7 +21,7 @@ const Register = () => {
       ("Payload being sent: ", payload);
   
       await axios
-        .post("http://localhost:8000/api/auth/register", payload)
+        .post("https://online-event-management-backend-0c4o.onrender.com/api/auth/register", payload)
         .then((res) => {
           toast.success(res.data.message);
           setTimeout(() => {
